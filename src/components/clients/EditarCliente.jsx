@@ -28,6 +28,7 @@ function EditarCliente(props) {
     //UseEffect cuando el componente carga
     useEffect(() => {
         consultarAPI();
+        // eslint-disable-next-line
     }, [])
 
     //Leer los datos del formulario
