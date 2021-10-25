@@ -145,4 +145,4 @@ function EditarProducto(props) {
     );
 }
 
-export default EditarProducto;
+export default withRouter(EditarProducto);

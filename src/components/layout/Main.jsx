@@ -8,6 +8,7 @@ import NuevoCliente from '../clients/NuevoCliente';
 import EditarCliente from '../clients/EditarCliente';
 import EditarProducto from '../productos/EditarProducto';
 import NuevoProducto from '../productos/NuevoProducto';
+import NuevoPedido from '../pedidos/NuevoPedido';
 
 const Main = () => {
     return (  
@@ -20,6 +21,7 @@ const Main = () => {
                 <Route exact path="/productos/nuevo" component={NuevoProducto} />
                 <Route exact path="/productos/editar/:id" component={EditarProducto} />
                 <Route exact path="/pedidos" component={Pedidos} />
+                <Route exact path="/pedidos/nuevo/:id" component={NuevoPedido} />
             </Switch>
         </main>
     );
