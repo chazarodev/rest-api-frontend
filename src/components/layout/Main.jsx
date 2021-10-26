@@ -9,6 +9,7 @@ import EditarCliente from '../clients/EditarCliente';
 import EditarProducto from '../productos/EditarProducto';
 import NuevoProducto from '../productos/NuevoProducto';
 import NuevoPedido from '../pedidos/NuevoPedido';
+import Login from '../auth/Login';
 
 const Main = () => {
     return (  
@@ -22,6 +23,7 @@ const Main = () => {
                 <Route exact path="/productos/editar/:id" component={EditarProducto} />
                 <Route exact path="/pedidos" component={Pedidos} />
                 <Route exact path="/pedidos/nuevo/:id" component={NuevoPedido} />
+                <Route exact path="/iniciar-sesion" component={Login} />
             </Switch>
         </main>
     );
